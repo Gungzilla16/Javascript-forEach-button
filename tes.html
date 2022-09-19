@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<h1 id="clickable1"> Click me plz </h1>
+<h2 id="clickable2"> Click me too plz </h2>
+<script>
+var text = ["thanks for clicking first", "thanks… but why only second?"];
+var index = 0;
+var indexId = 0;
+document.getElementById("clickable1").addEventListener("click",changeText);
+document.getElementById("clickable2").addEventListener("click",changeText);
+
+function changeText(){
+  if(document.getElementById("clickable1")){
+    document.getElementById("clickable1").innerHTML = text[0];
+  }
+    else if(document.getElementById("clickable2")){
+      document.getElementById("clickable2").innerHTML = text[1];
+  }
+}
+</script>
+</head>
+<body>
+
+</body>
+</html>
